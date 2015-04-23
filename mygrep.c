@@ -16,7 +16,7 @@
 int main(int argc, char *argv[])
 {
 	FILE *fp, *fin;
-	char line[2048], src[1024];
+	char line[4096], src[1024];
 	int len, flen, slen, i, lineNumber, flag;
 
 	if (argc != 2) { // 引数が2個以外なら
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	while(fgets(line, 2048, fp)){
+	while(fgets(line, 4096, fp)){
 		len = strlen(line);
 		line[len - 1] = '\0';
 		fin = fopen(line, "r");
