@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 		line[len - 1] = '\0';
 		fin = fopen(line, "r");
 		if (!fin) {
-			printf ("no input file: %s\n", fin);
+			printf ("no input file: %s\n", line);
 			exit(1);
 		}
 		lineNumber = 1;
