@@ -1,16 +1,23 @@
-blib/
-.build/
-_build/
-cover_db/
-inc/
-Build
-!Build/
-Build.bat
-.last_cover_stats
-Makefile
-Makefile.old
-MANIFEST.bak
-META.yml
-MYMETA.yml
-nytprof.out
-pm_to_blib
+# コンパイルされた実行ファイル
+mygrep/mygrep
+
+# OS 生成ファイル
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# エディターの設定
+/.vscode/
+/.idea/
+*.swp
+*~
+/.settings/
+
+# その他不要
+*.old
+*.log
+
